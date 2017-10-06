@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-World Map-128" translatesAutoresizingMaskIntoConstraints="NO" id="L5A-tb-p71">
+                                <rect key="frame" x="123" y="319.5" width="128" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9V9-6x-qc5">
+                                <rect key="frame" x="134.5" y="266" width="106.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHW-9d-KPH">
+                                <rect key="frame" x="173" y="477.5" width="30" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-Hamburger-96" translatesAutoresizingMaskIntoConstraints="NO" id="l3l-j0-cgo">
+                                <rect key="frame" x="139.5" y="140" width="96" height="96"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesas Por el Mundo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6k-2w-dOa">
+                                <rect key="frame" x="51" y="40" width="272" height="29"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSf-zO-WhZ">
+                                <rect key="frame" x="89" y="541" width="196" height="36"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Quiero una Hamburguesa"/>
+                                <connections>
+                                    <action selector="PedirHamburguesa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dh5-6q-hdg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t6k-2w-dOa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="3sq-Pj-kMq"/>
+                            <constraint firstItem="l3l-j0-cgo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bum-eJ-8GB"/>
+                            <constraint firstItem="L5A-tb-p71" firstAttribute="top" secondItem="9V9-6x-qc5" secondAttribute="bottom" constant="30" id="GNQ-bY-9cA"/>
+                            <constraint firstItem="mHW-9d-KPH" firstAttribute="top" secondItem="L5A-tb-p71" secondAttribute="bottom" constant="30" id="Gg0-8g-wpq"/>
+                            <constraint firstItem="mHW-9d-KPH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hvk-tw-I1V"/>
+                            <constraint firstItem="mSf-zO-WhZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P7Z-UR-pYv"/>
+                            <constraint firstItem="L5A-tb-p71" firstAttribute="top" secondItem="9V9-6x-qc5" secondAttribute="bottom" constant="30" id="cVY-3L-OsX"/>
+                            <constraint firstItem="l3l-j0-cgo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="nA5-Ne-boI"/>
+                            <constraint firstItem="t6k-2w-dOa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p52-Gf-Aoh"/>
+                            <constraint firstItem="L5A-tb-p71" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ufL-ul-VgJ"/>
+                            <constraint firstItem="9V9-6x-qc5" firstAttribute="top" secondItem="l3l-j0-cgo" secondAttribute="bottom" constant="30" id="yK1-RD-xxW"/>
+                            <constraint firstItem="9V9-6x-qc5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yT4-if-NI0"/>
+                            <constraint firstItem="mSf-zO-WhZ" firstAttribute="top" secondItem="mHW-9d-KPH" secondAttribute="bottom" constant="40" id="zGE-Mz-w84"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Hamburgesas" destination="9V9-6x-qc5" id="8eD-er-jTt"/>
+                        <outlet property="Paises" destination="mHW-9d-KPH" id="YrC-O7-FDF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-Hamburger-96" width="96" height="96"/>
+        <image name="icons8-World Map-128" width="128" height="128"/>
+    </resources>
+</document>
